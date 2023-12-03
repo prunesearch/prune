@@ -1,0 +1,13 @@
+[Unit]
+Description=Prune Services
+After=pspider.service
+
+[Service]
+Type=simple
+User=pspider
+ExecStart=/usr/sbin/pruned
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

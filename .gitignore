@@ -1,0 +1,13 @@
+# Generic cache files
+__pycache__/
+*/__pycache__/
+*.swp
+
+# Finder desktop service preferences
+.DS_Store
+
+# Compiled Python code, often platform-specific
+*.pyc
+
+# .env files, these could contain API keys, etc. which can be sensitive
+*.env

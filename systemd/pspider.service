@@ -1,0 +1,13 @@
+[Unit]
+Description=Prune Crawler
+After=network.target
+
+[Service]
+Type=simple
+User=pspider
+ExecStart=/usr/sbin/pspiderd
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
