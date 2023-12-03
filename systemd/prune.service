@@ -4,7 +4,7 @@ After=pspider.service
 
 [Service]
 Type=simple
-User=pspider
+User=prune
 ExecStart=/usr/sbin/pruned
 Restart=always
 RestartSec=10
