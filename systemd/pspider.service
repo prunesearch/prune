@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 Type=simple
-User=pspider
+User=prune
 ExecStart=/usr/sbin/pspiderd
 Restart=always
 RestartSec=10
