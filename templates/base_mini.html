@@ -50,6 +50,6 @@ More info: https://github.com/prunesearch/prune
     <div class="content">
         {% block content %} {% endblock %}
     </div>
-    <span style="font-size: 10px; opacity: 50%" class="bottom">PID {{ pid() }}, server loaded page at time {{ unixtime() }}</span>
+    <span style="font-size: 10px; opacity: 50%" class="bottom">{% block ending %}{% endblock %}PID {{ pid() }}, server loaded page at time {{ unixtime() }}</span>
 </body>
 </html>
