@@ -49,8 +49,8 @@ def crawl(url):
 # Define the starting URL
 start_url = "https://moz.com/top500"
 
-# Create a multiprocessing pool with 100 processes
-pool = multiprocessing.Pool(100)
+# Create a multiprocessing pool with 256 processes
+pool = multiprocessing.Pool(256)
 
 # Use the pool to crawl the starting URL and get the links
 links = pool.map(crawl, [start_url])

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} | Prune</title>
+    <style>
+        body {
+                font-family: arial, sans-serif;
+                padding: 3px;
+        }
+        a.button {
+                padding: 10px;
+                border: 2px solid gray;
+                border-radius: 10px;
+                background-color: #dbdbdb;
+                text-decoration: none;
+                color: black;
+        }
+        .spoiler, .spoiler2, .spoiler a, .spoiler2 a{ 
+                color: black;
+		background-color: black;
+        }
+
+        .spoiler:hover, .spoiler:hover a {
+                color: white;
+        }
+
+        .spoiler2:hover, .spoiler2:hover a { 
+                background-color:white; 
+        }
+        .logo {
+                font-size: 2em;
+                color: red;
+                text-decoration: none;
+        }
+        nav {
+                color: gray;
+        }
+    </style>
+    <script>{% block js %}{% endblock %}</script>
+</head>
+<body>
+    <span style="font-size: 15px; opacity: 10%; float: right">PID {{ pid() }}, server loaded page at time {{ unixtime() }}</span>
+    <nav> <ul> <a class="logo" href="/">Prune</a> </ul> </nav>
+    <hr>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+    <br>
+</body>
+</html>

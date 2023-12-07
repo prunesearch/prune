@@ -1,0 +1,12 @@
+{% extends 'base_mini.html' %}
+
+{% block content %}
+    <!-- Title: {% block title %}Index{% endblock %} -->
+    <div class="middle" align="center">
+    <h1 style="color: red">Prune</h1>
+    <form method="get" action="search">
+      <input type="search" id="prune-search" name="q" placeholder="Search the Web" required autofocus />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+{% endblock %}

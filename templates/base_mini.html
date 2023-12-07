@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+This file is part of the prune project.
+Prune is a self-hosted search engine that has no control over your data.
+More info: https://github.com/prunesearch/prune
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} | Prune</title>
+    <style>
+        body {
+                font-family: arial, sans-serif;
+                padding: 10px;
+        }
+        a.button {
+                padding: 10px;
+                border: 2px solid gray;
+                border-radius: 10px;
+                background-color: #dbdbdb;
+                text-decoration: none;
+                color: black;
+        }
+        .spoiler, .spoiler2, .spoiler a, .spoiler2 a{ 
+                color: black;
+		background-color: black;
+        }
+
+        .spoiler:hover, .spoiler:hover a {
+                color: white;
+        }
+
+        .spoiler2:hover, .spoiler2:hover a { 
+                background-color:white; 
+        }
+        .bottom {
+            position: fixed;
+            bottom: 10px;
+        }
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+    <script>{% block js %}{% endblock %}</script>
+</head>
+<body>
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+    <span style="font-size: 10px; opacity: 50%" class="bottom">PID {{ pid() }}, server loaded page at time {{ unixtime() }}</span>
+</body>
+</html>
