@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Title: {% block title %}About{% endblock %} -->
+<h1>Info about this install</h1>
+<p>This is <b>Prune {{ pruneversion() }}</b>, a software designed to index the web. <a href="/explained">Learn how it works.</a></p>
+
+<h1>Page info</h1>
+
+<p>There is some hidden info at the top right of most Prune pages, or the bottom left on pages like 404 and the homepage. This is the info produced for this page:</p>
+
+<code>PID {{ pid() }}, server loaded page at time {{ unixtime() }}</code>
+
+<p>Please note that this is meant for debugging - reporting problems you encounter. These details are logged every time you navigate on Prune. Don't worry - they have no personal info.</p>
+
+<h1>Open-Source</h1>
+
+<p>Prune is an open-source project. You can find the source code <a href="https://github.com/prunesearch/prune">here</a>.</p>
+{% endblock %}

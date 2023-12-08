@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Title: {% block title %}How Prune Works{% endblock %} -->
+<h1 id="how-does-prune-work">How Does Prune Work?</h1>
+<p>Prune is a self-hosted search engine software that operates on
+a distributed network of multiple servers all connected to one project.
+This unique architecture ensures that Prune is not reliant on any single
+entity, making it more resilient to censorship and manipulation.</p>
+<h2 id="decentralized-architecture">Decentralized Architecture</h2>
+<p>Unlike traditional search engines that rely on centralized servers,
+Prune’s network comprises independent servers, each maintaining its own
+copy of the index. This distributed approach eliminates the single point
+of failure, ensuring that Prune remains accessible even if some servers
+become unavailable.</p>
+<h2 id="spider-and-application">Spider and Application</h2>
+<p>At the heart of Prune lies a two-component system: the spider and the
+application. The spider, the tireless explorer of the web, proactively
+crawls through the internet, gathering information about new and updated
+pages. It then indexes this data, making it searchable within Prune.</p>
+<p>The application, on the other hand, serves as the user-facing
+interface, allowing individuals to query the index and retrieve relevant
+results. It acts as a gateway to the distributed network, seamlessly
+connecting users with the information they seek.</p>
+<h2 id="python-modules">Python Modules</h2>
+<p>Prune is built upon a solid foundation of Python modules, leveraging
+the power of open-source libraries like Flask and Requests. Flask, a web
+framework, provides the structure for building the application, while
+Requests facilitates communication with external websites, allowing the
+spider to crawl the web effectively.</p>
+<p>This combination of a decentralized architecture, effective data
+indexing, and robust Python modules ensures that Prune delivers a
+reliable and efficient search experience, offering users a
+censorship-resistant and privacy-focused alternative to traditional
+search engines.</p>
+{% endblock %}
